@@ -22,7 +22,7 @@ button.addEventListener('click', (event) => {
             position: 'topRight',
             messageColor: '#fff',
             messageSize: '16px',
-            iconUrl: "./img/Group.svg",
+            iconUrl: "/img/Group.svg",
             backgroundColor: " #EF4040",
             iconColor: '#fff'
         });
@@ -39,7 +39,7 @@ button.addEventListener('click', (event) => {
             position: 'topRight',
             messageColor: '#fff',
             messageSize: '16px',
-            iconUrl: "./img/Group.svg",
+            iconUrl: "/img/Group.svg",
             backgroundColor: " #EF4040",
             iconColor: '#fff'
         })
