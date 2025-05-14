@@ -2,7 +2,7 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import '../css/styles.css';
 
-const galleryContainer = document.querySelector('#gallery');
+const galleryContainer = document.querySelector('#gallery ul');
 
 const lightbox = new SimpleLightbox('#gallery ul li a', {
   captions: true,
@@ -41,7 +41,7 @@ export function createGallery(images) {
         </div></li> `)
     .join("");
     
-  galleryContainer.innerHTML = `<ul class="gallery">${markup}</ul>`;
+  galleryContainer.innerHTML = markup;
   
   lightbox.refresh();
 };
@@ -51,12 +51,13 @@ export function clearGallery() {
 };
 
 export function showLoader() {
-  galleryContainer.innerHTML = '<span class="loader"></span>';
+  galleryContainer.innerHTML = `<span class="loader"></span>`;
   
 };
 
 export function hideLoader() {
-  galleryContainer.classList.remove('loader');
+  const loaderRemove = document.querySelector('.loader');
+  loaderRemove.classList.remove('loader');
 }
   
 

@@ -34,7 +34,8 @@ button.addEventListener('click', (event) => {
         .then(data => {
             
             if (data.hits.length === 0) {
-        iziToast.error({
+                
+                iziToast.error({
             message: "Sorry, there are no images matching your search query. Please try again!",
             position: 'topRight',
             messageColor: '#fff',
@@ -43,6 +44,7 @@ button.addEventListener('click', (event) => {
             backgroundColor: " #EF4040",
             iconColor: '#fff'
         })
+        hideLoader();
             } else {
                 createGallery(data.hits)
     }
