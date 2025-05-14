@@ -41,7 +41,7 @@ export function createGallery(images) {
         </div></li> `)
     .join("");
     
-  galleryContainer.innerHTML = `<ul class="gallery-list">${markup}</ul>`;
+  galleryContainer.innerHTML = `<ul class="gallery">${markup}</ul>`;
   
   lightbox.refresh();
 };
@@ -51,7 +51,8 @@ export function clearGallery() {
 };
 
 export function showLoader() {
-  galleryContainer.classList.add('loader');
+  galleryContainer.innerHTML = '<span class="loader"></span>';
+  
 };
 
 export function hideLoader() {
