@@ -55,12 +55,12 @@ export function clearGallery() {
 
 
 export function showLoader() {
-  loader.classList.add('loader')
+  loader.classList.remove('hidden');
   
 };
 
 export function hideLoader() {
- loader.classList.remove('loader');
+ loader.classList.add('hidden')
 }
   
 

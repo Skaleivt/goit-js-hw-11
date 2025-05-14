@@ -9,6 +9,7 @@ import { createGallery } from './js/render-functions'
 import { clearGallery } from './js/render-functions';
 import { showLoader } from './js/render-functions';
 import { hideLoader } from './js/render-functions';
+import image from './img/Group.svg'
 
 
 button.addEventListener('click', (event) => {
@@ -22,7 +23,7 @@ button.addEventListener('click', (event) => {
             position: 'topRight',
             messageColor: '#fff',
             messageSize: '16px',
-            iconUrl: "./img/Group.svg",
+            iconUrl: image,
             backgroundColor: " #EF4040",
             iconColor: '#fff'
         });
@@ -40,7 +41,7 @@ button.addEventListener('click', (event) => {
             position: 'topRight',
             messageColor: '#fff',
             messageSize: '16px',
-            iconUrl: "./img/Group.svg",
+            iconUrl: image,
             backgroundColor: " #EF4040",
             iconColor: '#fff'
         })
