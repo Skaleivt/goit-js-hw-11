@@ -3,7 +3,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import '../css/styles.css';
 
 const galleryContainer = document.querySelector('.gallery');
-const loader = document.querySelector('#gallery')
+const loader = document.querySelector('#gallery span')
 
 const lightbox = new SimpleLightbox('#gallery ul li a', {
   captions: true,
